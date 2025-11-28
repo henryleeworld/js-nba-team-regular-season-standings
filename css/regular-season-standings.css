@@ -1,0 +1,38 @@
+body {
+    background-color: #111;
+    color: #f5f5f5;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.nba-tab {
+    border-bottom: 2px solid #333;
+}
+
+.nba-tab .nav-link {
+    color: #bbb;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+.nba-tab .nav-link.active {
+    color: #fff;
+    border-bottom: 3px solid #e53935;
+    background-color: transparent;
+}
+
+table.dataTable tbody tr.table-warning {
+    background-color: rgba(255, 193, 7, 0.25) !important;
+}
+
+.table-dark th {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+
+table.dataTable {
+    color: #ddd;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #333 !important;
+}

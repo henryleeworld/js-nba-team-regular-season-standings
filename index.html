@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="NBA 隊伍例行賽戰績" />
+        <meta property="og:description" content="NBA 例行賽東、西區排名第 1 名到第 6 名的球隊，依照排名依序成為季後賽兩區第 1 到第 6 種子，而兩區例行賽第 7 名到第 10 名的球隊，也都還有透過「附加賽」闖進季後賽的機會。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.3.5/css/dataTables.bootstrap5.min.css" />
+        <link rel="stylesheet" href="css/regular-season-standings.css" />
+        <title>NBA 隊伍例行賽戰績</title>
+    </head>
+    <body>
+        <div class="container-fluid my-4">
+            <h1 class="text-center mb-4">NBA <span id="season"></span> 隊伍🏀例行賽戰績</h1>
+            <ul class="nav nav-tabs nba-tab mb-3" id="standingsTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="east-tab" data-bs-toggle="tab" data-bs-target="#east" type="button" role="tab">
+                        東區
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="west-tab" data-bs-toggle="tab" data-bs-target="#west" type="button" role="tab">
+                        西區
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content mt-3" id="conferenceTabsContent">
+                <div class="tab-pane fade" id="east" role="tabpanel">
+                    <div class="table-responsive">
+                        <table id="east-table" class="table table-striped table-hover table-dark w-100">
+                            <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>隊伍</th>
+                                    <th>勝</th>
+                                    <th>敗</th>
+                                    <th>勝率</th>
+                                    <th>勝差</th>
+                                    <th>vs.同區</th>
+                                    <th>vs.同組</th>
+                                    <th>主場</th>
+                                    <th>客場</th>
+                                    <th>中立場</th>
+                                    <th>延長賽</th>
+                                    <th>近 10 場</th>
+                                    <th>連勝／敗</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="west" role="tabpanel">
+                    <div class="table-responsive">
+                        <table id="west-table" class="table table-striped table-hover table-dark w-100">
+                            <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>隊伍</th>
+                                    <th>勝</th>
+                                    <th>敗</th>
+                                    <th>勝率</th>
+                                    <th>勝差</th>
+                                    <th>vs.同區</th>
+                                    <th>vs.同組</th>
+                                    <th>主場</th>
+                                    <th>客場</th>
+                                    <th>中立場</th>
+                                    <th>延長賽</th>
+                                    <th>近 10 場</th>
+                                    <th>連勝／敗</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <script src="https://cdn.datatables.net/2.3.5/js/dataTables.min.js" defer></script>
+        <script src="https://cdn.datatables.net/2.3.5/js/dataTables.bootstrap5.min.js" defer></script>
+        <script src="js/regular-season-standings.js" defer></script>
+    </body>
+</html>
